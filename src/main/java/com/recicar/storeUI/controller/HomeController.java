@@ -66,6 +66,25 @@ public class HomeController {
         return "index-3";
     }
 
+    @GetMapping("/index-4")
+    public String index4() {
+        return "index-4";
+    }
+
+    @GetMapping("/index-5")
+    public String index5() {
+        return "index-5";
+    }
+
+    @GetMapping("/index-6")
+    public String index6() {
+        return "index-6";
+    }
+
+    @GetMapping("/index-7")
+    public String index7() {
+        return "index-7";
+    }
     @GetMapping("/login")
     public String login() {
         return "login";
@@ -86,6 +105,11 @@ public class HomeController {
         return "product-details";
     }
 
+    @GetMapping("/product-sidebar")
+    public String productSidebar() {
+        return "product-sidebar";
+    }
+
     @GetMapping("/services")
     public String services() {
         return "services";
@@ -99,5 +123,15 @@ public class HomeController {
     @GetMapping("/wishlist")
     public String wishlist() {
         return "wishlist";
+    }
+
+    @GetMapping("/404")
+    public String error() {
+        return "404";
+    }
+
+    @GetMapping("/compare")
+    public String compare() {
+        return "compare";
     }
 }
